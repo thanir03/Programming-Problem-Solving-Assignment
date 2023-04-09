@@ -1,0 +1,81 @@
+Main 
+1. USER Authentication |
+2. ADMIN Authentication | 
+
+
+User Authentication
+1. User Register
+2. User Login 
+
+
+User Register
+1. request user details and validate the details
+2. proceed to Login
+
+name , ic , address, street , city , state , phone number , vaccination status
+
+
+
+User Login 
+1. request auth information
+2. USER MENU
+
+USER MENU
+0. Notification of actions 
+1. Update medical History
+2. View profile
+
+
+Admin Authentication
+1. request auth information
+2. proceed to admin Menu
+
+
+Admin Menu
+1. View users 
+2. View covid-19 positive users
+3. View states with number of covid 19 positive 
+
+
+
+
+
+Wei Zhe 
+1. User register 
+2. User Login
+
+Zhe Chen 
+1. View user profile 
+2. Update medical history 
+
+Thanir 
+1. Notification of Actions
+2. Update medical history 
+
+Dinesh 
+1. Admin login 
+2. View users 
+
+Anthony
+1. View users that are grouped in catogery
+2. View statistic of covid 19 patients in each state
+
+
+
+
+// Selection of  User or admin
+// Selection login or sign in for user
+
+// main function => get_start_choice
+// user_auth_choice |
+//      user_login_menu |
+//      user_register_menu |
+//      user_menu 
+//          notification 
+//          update_medical_history
+//          view_profile | 
+//          update_profile
+// admin_login
+//      admin_menu
+//          view_users
+//          view_covid_19_patients

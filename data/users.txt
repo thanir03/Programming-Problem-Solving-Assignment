@@ -1,0 +1,19 @@
+thanir10|ganesh28|0194798670|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|13|A|3|N|1/4/2023|thanir09|Dad
+thanir09|ganesh28|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|14|A|3|N|1/4/2023|thanir10|Son
+thanir08|ganesh28|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|1|A|0|P|12/12/2023|thanir10|Cousin
+thanir07|ganesh28|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|14|A|3|N|1/4/2023|0|0
+thanir|ganesh28|0194798675|031110141309|THanirmali Nagppan|10/11/2003|Sungai Long|56000|14|A|3|N|1/4/2023|0|0
+thanir03|ganesh2|0194798675|031110141309|Thanirmalai Nagappan A/l Sehgar|10/11/2003|Taman Segar|56000|12|A|0|P|1/4/2023|0|0
+ganesh|ganesh|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Taman Segar Persiaran Lemak|56000|13|A|3|N|1/4/2023|cristiano7|son
+cristiano7|ganesh28|0194798675|031110141309|Cristiano Ronaldo|10/11/2003|41-1 Taman Siu Cheras|56100|5|B|2|N|1/4/2023|ganesh28|dad
+ganesh28|ganesh28|0194798675|080903141309|Ganesh Angappan A/L Sehgar|03/09/2008|41-1 Persiaran lemak|56000|14|B|2|N|1/4/2023|cristiano7|wife
+cristiano8|ganesh28|0194798675|060606141309|Lionel Messi|06/06/2006|La Paris Persiaran Paris Taman Paris|10000|5|A|3|0|0|cristiano7|Dad
+none|ganesh28|031110141309|031110141309|Unknown Name|10/11/2003|41-1 Persiaran Lemak|56000|14|B|0|0|0|cristiano7|dad
+resh_mond|ganesh28|0111114131|080808242309|Reshmond Raj|08/08/2008|45 Persiaran Kobis|56000|5|A|3|0|0|thanir10|friend
+penaldo|penaldo|0154798675|891212141309|Cristiano Penaldo|12/12/1989|45-6 Cyberjaya Duplex|56000|10|A|0|0|0|0|0
+ganesh27|ganesh27|0174798675|040404141309|Thanirmalai Nagappan|04/04/2004|Sungai Long|56000|14|A|3|0|0|thanir10|Dad
+gan|ganesh|0194798675|080914141309|Ganesh Angappan|14/09/2008|41-1 Taman Segar|56000|14|A|3|0|0|thanir10|Dad
+siu|siu786|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Tamna Segar|50000|14|A|3|0|0|thanir10|Dad
+thanir01|thanir01|0195798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Persiarana Lemak|56000|1|A|3|0|0|0|0
+thanir11|ganesh28|0194798675|031110141309|THanirmala Nagappan A/l Sehgar|10/11/2003|41-1 , Persiaran Lemak|56000|14|B|2|0|0|0|0
+dinesh|dinesh|0194798675|020903141309|Dineshwaran A/L Siu|03/09/2002|Sungai Long Cheras |56000|10|A|1|N|08/04/2023|thanir08|Dad
