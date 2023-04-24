@@ -1,90 +1,78 @@
 #include <iostream>
-#include <fstream>
 #include <string>
 #include <vector>
-#include <cctype>
-#define user_file "data/users.txt"
+// files imported
 #include "./user-interface/ui.cpp"
-#include "./user/user_menu.cpp"
-// #include "./admin/admin.cpp"
+#include "./user/user_vaccination.cpp"
+#include "./admin/admin_login.cpp"
 using namespace std;
+
+// Function prototype
+
 void run_program_again(bool *run_again);
 void main_menu(void);
 
+// Imported Functions
+
+void user_auth_menu(void);
+void admin_login(void);
+void display_heading(string title);
+void filter_vac_appoinment(void);
+
+// function to request user to run again
 void run_program_again(bool *run_again)
 {
     char run_again_choice;
     cout << "Do you want to run again : (y/n) ";
     cin >> run_again_choice;
     if (run_again_choice == 'y')
-    {
         *run_again = true;
-    }
     else
-    {
         *run_again = false;
-    }
 }
 
+// main menu of the program
+// user get to choose between user or admin
+// filter_vac_appoinment filters the users that have already completed their appoinment
 void main_menu(void)
 {
     system("cls");
     system("Color 0B");
-    display_heading("Welcome to MYSEJAHTERA");
+    filter_vac_appoinment();
+    display_heading("Welcome to Covid-19 Tracking System");
     vector<string> option = {"USER",
                              "ADMIN",
                              "EXIT"};
-
     int choice;
     cout << "Are you a user or admin ? \n";
     display_option(option);
     cout << "Enter your choice : ";
     cin >> choice;
-    cin.clear();
-    if (choice == 1)
+    if (cin.fail())
     {
-        user_auth_menu();
-    }
-
-    else if (choice == 2)
-    {
-        // admin_login();
-    }
-    else if (choice == 3)
-    {
-        return;
-    }
-    else
-    {
-        cout << "Invalid input\n";
         cin.clear();
         cin.ignore();
-        main_menu();
     }
+    while (choice < 1 || choice > option.size())
+    {
+        cout << "Enter your choice : ";
+        cin >> choice;
+        if (cin.fail())
+        {
+            cin.clear();
+            cin.ignore();
+        }
+    }
+    if (choice == 1)
+        user_auth_menu();
+    else if (choice == 2)
+        admin_login();
+    else if (choice == 3)
+        return;
     cout << "\n";
 }
 
-// void encryptString(void)
-// {
-//     string str = "hello world";
-
-//     for (int i = 0; i < str.length(); i++)
-//     {
-//         str[i] = str[i] + 2;
-//     }
-//     cout << str;
-// }
-// void decryptString(void)
-// {
-//     string str = "jgnnq\"yqtnf";
-
-//     for (int i = 0; i < str.length(); i++)
-//     {
-//         str[i] = str[i] - 2;
-//     }
-//     cout << str;
-// }
-
+// Main function (function that execute on program load)
 int main(void)
 {
     bool run_again = false;
@@ -95,7 +83,6 @@ int main(void)
         main_menu();
         run_program_again(&run_again);
     }
-    read_user_data();
     system("pause");
     return 0;
 }

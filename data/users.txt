@@ -1,19 +1,21 @@
-thanir10|ganesh28|0194798670|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|13|A|3|N|1/4/2023|thanir09|Dad
-thanir09|ganesh28|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|14|A|3|N|1/4/2023|thanir10|Son
-thanir08|ganesh28|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|1|A|0|P|12/12/2023|thanir10|Cousin
-thanir07|ganesh28|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Jalan Lemak Cheras|56100|14|A|3|N|1/4/2023|0|0
-thanir|ganesh28|0194798675|031110141309|THanirmali Nagppan|10/11/2003|Sungai Long|56000|14|A|3|N|1/4/2023|0|0
-thanir03|ganesh2|0194798675|031110141309|Thanirmalai Nagappan A/l Sehgar|10/11/2003|Taman Segar|56000|12|A|0|P|1/4/2023|0|0
-ganesh|ganesh|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Taman Segar Persiaran Lemak|56000|13|A|3|N|1/4/2023|cristiano7|son
-cristiano7|ganesh28|0194798675|031110141309|Cristiano Ronaldo|10/11/2003|41-1 Taman Siu Cheras|56100|5|B|2|N|1/4/2023|ganesh28|dad
-ganesh28|ganesh28|0194798675|080903141309|Ganesh Angappan A/L Sehgar|03/09/2008|41-1 Persiaran lemak|56000|14|B|2|N|1/4/2023|cristiano7|wife
-cristiano8|ganesh28|0194798675|060606141309|Lionel Messi|06/06/2006|La Paris Persiaran Paris Taman Paris|10000|5|A|3|0|0|cristiano7|Dad
-none|ganesh28|031110141309|031110141309|Unknown Name|10/11/2003|41-1 Persiaran Lemak|56000|14|B|0|0|0|cristiano7|dad
-resh_mond|ganesh28|0111114131|080808242309|Reshmond Raj|08/08/2008|45 Persiaran Kobis|56000|5|A|3|0|0|thanir10|friend
-penaldo|penaldo|0154798675|891212141309|Cristiano Penaldo|12/12/1989|45-6 Cyberjaya Duplex|56000|10|A|0|0|0|0|0
-ganesh27|ganesh27|0174798675|040404141309|Thanirmalai Nagappan|04/04/2004|Sungai Long|56000|14|A|3|0|0|thanir10|Dad
-gan|ganesh|0194798675|080914141309|Ganesh Angappan|14/09/2008|41-1 Taman Segar|56000|14|A|3|0|0|thanir10|Dad
-siu|siu786|0194798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Tamna Segar|50000|14|A|3|0|0|thanir10|Dad
-thanir01|thanir01|0195798675|031110141309|Thanirmalai Nagappan|10/11/2003|41-1 Persiarana Lemak|56000|1|A|3|0|0|0|0
-thanir11|ganesh28|0194798675|031110141309|THanirmala Nagappan A/l Sehgar|10/11/2003|41-1 , Persiaran Lemak|56000|14|B|2|0|0|0|0
-dinesh|dinesh|0194798675|020903141309|Dineshwaran A/L Siu|03/09/2002|Sungai Long Cheras |56000|10|A|1|N|08/04/2023|thanir08|Dad
+lee10|sdvvzrug|0113928475|060922145296|Lee Chong Wei|22/09/2006|40 Jalan Cheras|10000|14|A|4|0|0
+dinesh10|sdvvzrug|0164738290|010205011784|Dineshwaran A/L Kumar|05/02/2001|41 Jalan Ipoh|20000|2|A|1|lee10|Dad
+chong10|sdvvzrug|0182957361|991108026529|Chong Wei Lee|08/11/1999|51 Jalan Lemak|20000|3|A|1|lee10|Brother
+tankye10|sdvvzrug|0138264917|050417036529|Tan Kye Wen|17/04/2005|40 Jalan Cheras|20000|4|B|3|chong10|Friend
+alex10|sdvvzrug|0196352819|080728046529|Alex Wong|28/07/2008|40 Jalan Cheras|20000|5|A|0|tankye10|Brother
+john10|sdvvzrug|0117463928|021012056529|John Lee|12/10/2002|40 Jalan Cheras|20000|6|B|1|alex10|Dad
+joey10|sdvvzrug|0148276390|030131066529|Joey Tribbiani|31/01/2003|40 Jalan Cheras|20000|7|A|4|john10|Friend
+caleb10|sdvvzrug|0175298463|071209076529|Caleb Yong|09/12/2007|40 Jalan Cheras|20000|8|B|3|joey10|Brother
+lucas10|sdvvzrug|0102938475|010514086529|Lucas Hernan|14/05/2001|40 Jalan Cheras|20000|9|A|0|caleb10|Brother
+ben10|sdvvzrug|0198765432|050823096529|Ben Mysterio|23/08/2005|40 Jalan Cheras|20000|10|B|3|0|0
+daniel10|sdvvzrug|0123456789|040619106529|Daniel Alvarez|19/06/2004|40 Jalan Cheras|20000|11|A|4|0|0
+michael10|sdvvzrug|0176543210|020330116529|Michael Jordan|30/03/2002|40 Jalan Cheras|20000|12|B|0|0|0
+josh10|sdvvzrug|0167890123|080907126529|Josh Henry|07/09/2008|40 Jalan Cheras|20000|13|A|1|michael10|Dad
+grace10|sdvvzrug|0134567890|030913136529|Grace Lee|13/09/2003|40 Jalan Cheras|20000|14|B|3|josh10|Brother
+sophia10|sdvvzrug|0112345678|061125016529|Sophia Chong|25/11/2006|40 Jalan Cheras|20000|1|A|0|grace10|Sister
+ethan10|sdvvzrug|0145678901|050702026529|Ethan Henry|02/07/2005|40 Jalan Cheras|20000|2|B|1|sophia10|Wife
+harry10|sdvvzrug|0154321098|030111036529|Harry Kane|11/01/2003|40 Jalan Cheras |20000|14|A|0|0|0
+thanir10|sdvvzrug|0194798675|031110036529|Thanirmalai Nagappan|10/11/2003|40 Jalan Cheras |20000|14|B|3|0|0
+ganesh10|sdvvzrug|0154321098|081110036529|Ganesh Kumar|10/11/2008|40 Jalan Cheras |20000|14|A|0|thanir10|Brother
+chandler10|sdvvzrug|0154321098|041110036529|Chandler Bing|04/11/2004|40 Jalan Cheras |20000|14|B|3|harry10|Friend
+elon10|sdvvzrug|0123456789|981230143542|Elon Musk|30/12/1998|41 Jalan Klang|50000|14|A|4|thanir10|Friend
