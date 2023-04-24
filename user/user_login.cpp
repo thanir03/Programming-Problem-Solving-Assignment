@@ -22,13 +22,14 @@ user_data_struct has_username_in_db(vector<user_data_struct> data, string userna
 // Login menu to input username and password
 void user_login(void)
 {
-
     system("cls");
     vector<user_data_struct> data = read_user_data();
     string username, password;
     display_heading("USER LOGIN");
+    cin.clear();
+    cin.ignore();
     cout << "Enter your username : ";
-    cin >> username;
+    getline(cin, username);
     user_data_struct current_user_data;
     while (true)
     {
@@ -37,12 +38,12 @@ void user_login(void)
             break;
         cout << "\nUsername not in the database\n";
         cout << "Enter your username : ";
-        cin >> username;
+        getline(cin, username);
     }
     int password_attempt_count = 0;
     cout << "\n";
     cout << "Enter your password : ";
-    cin >> password;
+    getline(cin, password);
     password_attempt_count++;
     while (password != current_user_data.password)
     {
@@ -53,9 +54,10 @@ void user_login(void)
             return;
         }
         cout << "Enter your password : ";
-        cin >> password;
+        getline(cin, password);
         password_attempt_count++;
     }
-
+    cout << "\nYou have successfully logged in \n";
+    system("pause");
     user_menu(current_user_data.username);
 }

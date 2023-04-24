@@ -165,9 +165,9 @@ void update_covid19_test(user_data_struct user)
         cout << "\nThank you for updating your covid19 test.\n";
         user.covid19_status = covid19_status;
         change_single_user_data(user);
-        system("pause");
-        user_menu(user.username);
     }
+    system("pause");
+    user_menu(user.username);
 }
 
 // View user profile

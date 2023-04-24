@@ -367,6 +367,8 @@ int read_state(void)
 // reading user dependant and ensuring user dependant is registered in our system
 void read_dependant(string *dependant, string *dependant_relationship, vector<user_data_struct> data)
 {
+    cin.clear();
+    cin.ignore();
     cout << "\nExample : cristiano7\n";
     cout << "Enter dependant username : ";
     getline(cin, *dependant);
