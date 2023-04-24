@@ -25,13 +25,14 @@ void user_login(void)
     system("cls");
     vector<user_data_struct> data = read_user_data();
     string username, password;
+    int user_login_attempt = 1;
     display_heading("USER LOGIN");
     cin.clear();
     cin.ignore();
     cout << "Enter your username : ";
     getline(cin, username);
     user_data_struct current_user_data;
-    while (true)
+    while (user_login_attempt < 3)
     {
         current_user_data = has_username_in_db(data, username);
         if (current_user_data.username != "")
@@ -39,6 +40,12 @@ void user_login(void)
         cout << "\nUsername not in the database\n";
         cout << "Enter your username : ";
         getline(cin, username);
+        user_login_attempt++;
+    }
+    if (user_login_attempt == 3)
+    {
+        cout << "Too many attempts";
+        return;
     }
     int password_attempt_count = 0;
     cout << "\n";
