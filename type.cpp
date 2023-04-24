@@ -43,7 +43,7 @@ struct covid_19_stats
 // covid-19 status
 vector<string> covid_19_status = {
     "Confirmed Case", // 0
-    "Close Contact",  // 1
+    "Casual Contact",  // 1
     "Suspected Case", // 2
     "High Risk",      // 3
     "Low Risk",       // 4
