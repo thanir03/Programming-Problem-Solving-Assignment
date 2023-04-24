@@ -1,35 +1,15 @@
+#include <vector>
+#include <string>
 #pragma once
 #include "../data_management/process_user_data.cpp"
+#include "../type.cpp"
 using namespace std;
 
+// Function prototype
 user_data_struct has_username_in_db(vector<user_data_struct> data, string username);
+void change_single_user_data(user_data_struct user);
 
-vector<string> covid_19_status = {
-    "Confirmed Case",
-    "Suspected Case",
-    "High Risk",
-    "Low Risk",
-};
-vector<string> state_list = {
-    "Johor",
-    "Kedah",
-    "Kelantan",
-    "Melaka",
-    "Negeri Sembilan",
-    "Pahang",
-    "Penang",
-    "Perak",
-    "Perlis",
-    "Selangor",
-    "Terengganu",
-    "Sabah",
-    "Sarawak",
-    "Kuala Lumpur",
-};
-
-vector<string> list_of_actions = {
-    "PERFORM A COVID-19 TEST", "UPDATE YOUR TEST RESULT IN MEDICAL HISTORY MENU", "QUARANTINE FOR 3 DAYS", "QUARANTINE FOR 10 DAYS", "APPLY FOR VACCINATION"};
-
+// finding the user with the given user vector
 user_data_struct has_username_in_db(vector<user_data_struct> data, string username)
 {
     for (int i = 0; i < data.size(); i++)
@@ -42,6 +22,7 @@ user_data_struct has_username_in_db(vector<user_data_struct> data, string userna
     return {};
 }
 
+// reading the user file , changing the users data and rewriting the file
 void change_single_user_data(user_data_struct user)
 {
     vector<user_data_struct> user_list = read_user_data();
@@ -54,5 +35,3 @@ void change_single_user_data(user_data_struct user)
     }
     write_user_data(user_list);
 }
-
-//  username|password|phone_num|ic|fullname|dob|address|postcode|state|vaccination_status|covid19_status|covid19_test_result|covid_19_test_date|dependant|dependant_relationship

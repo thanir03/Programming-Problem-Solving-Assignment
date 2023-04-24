@@ -1,0 +1,14 @@
+1|Klinik Kesihatan Johor
+2|Klinik Kesihatan Kedah
+3|Klinik Kesihatan Kelantan
+4|Klinik Kesihatan Melaka
+5|Klinik Kesihatan Negeri Sembilan
+6|Klinik Kesihatan Pahang
+7|Klinik Kesihatan Penang
+8|Klinik Kesihatan Perak
+9|Klinik Kesihatan Perlis
+10|Klinik Kesihatan Selangor
+11|Klinik Kesihatan Terengganu
+12|Klinik Kesihatan Sabah
+13|Klinik Kesihatan Sarawak
+14|Klinik Kesihatan Kuala Lumpur
