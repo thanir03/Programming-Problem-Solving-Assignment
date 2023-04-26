@@ -1,16 +1,15 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#pragma once
-// Imported files
-#include "./user_helper.cpp"
-#include "./user_login.cpp"
-#include "./user_register.cpp"
-#include "./user_functions.cpp"
-#include "../data_management/process_user_data.cpp"
+#include "./user_helper.h"
+#include "./user_login.h"
+#include "./user_register.h"
+#include "./user_functions.h"
+#include "../data_management/process_user_data.h"
 using namespace std;
 
-// function prototype
+// Function prototype
+
 void user_auth_menu(void);
 void user_menu(string username);
 
@@ -138,4 +137,6 @@ void user_menu(string username)
         apply_vaccination(user);
     else
         return;
+    system("pause");
+    user_menu(user.username);
 }

@@ -2,7 +2,6 @@
 #include <string>
 #include <sstream>
 #include <ctime>
-#pragma once
 using namespace std;
 
 // Function prototype

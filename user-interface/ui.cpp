@@ -2,8 +2,7 @@
 #include <string>
 #include <vector>
 // Imported files
-#include "../type.cpp"
-#pragma once
+#include "../type.h"
 using namespace std;
 // done
 

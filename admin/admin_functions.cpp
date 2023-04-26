@@ -3,16 +3,14 @@
 #include <vector>
 #include <string>
 #include <cmath>
-#pragma once
-// Imported files
-#include "../user-interface/ui.cpp"
-#include "../admin/admin_menu.cpp"
-#include "../user/user_helper.cpp"
-#include "../data_management/process_user_data.cpp"
-#include "../helper/sorting.cpp"
-#include "../type.cpp"
+#include "../user-interface/ui.h"
+#include "./admin_menu.h"
+#include "../user/user_helper.h"
+#include "../data_management/process_user_data.h"
+#include "../data_management/process_vaccination.h"
+#include "../helper/sorting.h"
+#include "../type.h"
 using namespace std;
-// done
 
 // Function Prototype
 vector<user_data_struct> get_covid_19_positive(vector<user_data_struct> user_list);
@@ -61,8 +59,6 @@ void view_covid19_positive(void)
     {
         cout << left << setw(30) << positive_patients[i].fullname << setw(20) << state_list[positive_patients[i].state - 1] << "\n";
     }
-    system("pause");
-    admin_menu();
 }
 
 // get covid 19 positive patients according to the states

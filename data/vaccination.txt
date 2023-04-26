@@ -3,3 +3,4 @@ michael10|Klinik Kesihatan Sabah|30/5/2023
 grace10|Klinik Kesihatan Kuala Lumpur|30/5/2023
 thanir10|Klinik Kesihatan Kuala Lumpur|30/5/2023
 chandler10|Klinik Kesihatan Kuala Lumpur|30/5/2023
+john10|Klinik Kesihatan Pahang|28/4/2023

@@ -2,8 +2,7 @@
 #include <string>
 #include <iostream>
 #include <vector>
-#pragma once
-#include "../type.cpp"
+#include "../type.h"
 #define splitter '|'
 #define vaccination_data_file "data/vaccination.txt"
 using namespace std;

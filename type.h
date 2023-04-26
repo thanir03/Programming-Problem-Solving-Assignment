@@ -1,6 +1,15 @@
+#ifndef TYPE_H
+#define TYPE_H
+
 #include <string>
 #include <vector>
-#pragma once
+#define confirmedCase 0
+#define casualContact 1
+#define suspectedCase 2
+#define highRisk 3
+#define lowRisk 4
+#define vaccinatedStatus "A"
+#define unvaccinatedStatus "B"
 using namespace std;
 
 // all struct types used in this application
@@ -41,15 +50,15 @@ struct covid_19_stats
 };
 
 // covid-19 status
-vector<string> covid_19_status = {
+const vector<string> covid_19_status = {
     "Confirmed Case", // 0
-    "Casual Contact",  // 1
+    "Casual Contact", // 1
     "Suspected Case", // 2
     "High Risk",      // 3
     "Low Risk",       // 4
 };
 // state list
-vector<string> state_list = {
+const vector<string> state_list = {
     "Johor",
     "Kedah",
     "Kelantan",
@@ -67,4 +76,6 @@ vector<string> state_list = {
 };
 
 // admin username list
-vector<string> admin_list = {"admin1", "admin2", "admin3"};
+const vector<string> admin_list = {"admin1", "admin2", "admin3"};
+
+#endif // TYPE_H

@@ -1,16 +1,16 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#pragma once
-// Imported files
-#include "../user-interface/ui.cpp"
-#include "../admin/admin_functions.cpp"
+#include "../user-interface/ui.h"
+#include "../admin/admin_functions.h"
 using namespace std;
 
 // Functions prototype
+
 void admin_menu(void);
 
 // Imported Functions
+
 void view_covid19_positive(void);
 void view_vaccination_center(void);
 void view_covid19_stats(void);
@@ -55,4 +55,6 @@ void admin_menu()
         view_vaccination_appoinment();
     else
         return;
+    system("pause");
+    admin_menu();
 }
