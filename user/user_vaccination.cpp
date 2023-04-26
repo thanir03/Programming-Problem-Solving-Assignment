@@ -1,14 +1,14 @@
 #include <ctime>
 #include <vector>
-#pragma once
+#include "./user_vaccination.h"
+#include "../data_management/process_vaccination.h"
+#include "../data_management/process_vaccination_center.h"
+#include "../data_management/process_user_data.h"
+#include "../helper/date_helper.h"
+#include "./user_menu.h"
+#include "../type.h"
+#include "../user-interface/ui.h"
 #define TWO_DAYS_IN_SECONDS 172800
-// Imported files
-#include "../data_management/process_vaccination.cpp"
-#include "../data_management/process_vaccination_center.cpp"
-#include "../data_management/process_user_data.cpp"
-#include "../helper/date_helper.cpp"
-#include "./user_menu.cpp"
-#include "../type.cpp"
 using namespace std;
 
 // Function prototype
@@ -22,7 +22,7 @@ void display_vaccination_app(vacc_appoinment_data user_app);
 // Function prototype from other files
 
 vector<vacc_appoinment_data> read_vaccination_data();
-void write_vaccination_data(vector<user_data_struct>);
+bool write_vaccination_data(vector<user_data_struct>);
 time_t parse_string_date(string date);
 vector<vac_center_data> read_vacc_center_data(void);
 bool add_vaccination_data(vacc_appoinment_data vac_app);
@@ -57,9 +57,9 @@ void change_vaccination_status(vector<vacc_appoinment_data> completed_vac_app)
         {
             if (user_list[j].username == completed_vac_app[i].username)
             {
-                user_list[j].vaccination_status = 'A';
-                if (user_list[j].covid19_status == 3)
-                    user_list[j].covid19_status = 4;
+                user_list[j].vaccination_status = vaccinatedStatus;
+                if (user_list[j].covid19_status == highRisk)
+                    user_list[j].covid19_status = lowRisk;
             }
         }
     }
@@ -103,7 +103,7 @@ void apply_vaccination(user_data_struct user)
 {
     system("cls");
     display_heading("Apply For Vaccination");
-    if (user.vaccination_status == "A")
+    if (user.vaccination_status == vaccinatedStatus)
     {
         cout << "\nYou are already vaccinated\n";
     }
@@ -139,7 +139,4 @@ void apply_vaccination(user_data_struct user)
                 cout << "Failed to add your record. Please try again";
         }
     }
-    system("pause");
-    user_menu(user.username);
-    return;
 }

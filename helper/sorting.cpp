@@ -1,6 +1,6 @@
 #include <vector>
 #include <cmath>
-#include "../type.cpp"
+#include "../type.h"
 using namespace std;
 
 void quick_sort(vector<covid_19_stats> &arr, int start, int end);

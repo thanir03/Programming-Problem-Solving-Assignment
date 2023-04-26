@@ -1,15 +1,14 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#pragma once
 // Imported files
-#include "./user_helper.cpp"
-#include "./user_menu.cpp"
-#include "../user-interface/ui.cpp"
-#include "./user_register.cpp"
-#include "../helper/date_helper.cpp"
-#include "../user/user_vaccination.cpp"
-#include "../type.cpp"
+#include "./user_helper.h"
+#include "./user_menu.h"
+#include "../user-interface/ui.h"
+#include "./user_register.h"
+#include "../helper/date_helper.h"
+#include "../user/user_vaccination.h"
+#include "../type.h"
 #define TWO_DAYS_IN_SECONDS 172800
 using namespace std;
 
@@ -36,22 +35,23 @@ void read_dependant(string *dependant, string *dependant_relationship, vector<us
 int read_state(void);
 
 // returning array of actions according to the user's covid-19 status
+// if unsure about what are the covid-19 status are refering to , refer the covid-19 status array in type.h
 vector<string> get_action_list(string username)
 {
     vector<user_data_struct> user_list = read_user_data();
     user_data_struct user = has_username_in_db(user_list, username);
     vector<string> actions = {};
-    if (user.covid19_status == 0)
+    if (user.covid19_status == confirmedCase)
     {
         actions.push_back("Quarantine for 10 days");
         actions.push_back("Perform a Covid 19 Test after 10 days");
     }
-    else if (user.covid19_status == 1 || user.covid19_status == 2)
+    else if (user.covid19_status == casualContact || user.covid19_status == suspectedCase)
     {
         actions.push_back("Perform a Covid 19 Test immediately");
         actions.push_back("Quarantine for 3 days");
     }
-    if (user.vaccination_status == "B")
+    if (user.vaccination_status == unvaccinatedStatus)
     {
         vacc_appoinment_data user_vac = find_vac_app(username);
         if (user_vac.username != "")
@@ -130,7 +130,7 @@ void update_covid19_test(user_data_struct user)
         getline(cin, covid_19_test_date);
         while (!validate_test_date(covid_19_test_date))
         {
-            cout << "\nInvalid Date\n";
+            cout << "\nInvalid Date or Date exceeded 1 day limit from today\n";
             cout << "When was the COVID 19 test taken ? ";
             getline(cin, covid_19_test_date);
         }
@@ -159,15 +159,13 @@ void update_covid19_test(user_data_struct user)
             }
         }
         if (covid19_test_result == 'P')
-            covid19_status = 0;
+            covid19_status = confirmedCase;
         else
-            covid19_status = ((user.vaccination_status == "A") ? 4 : 3);
+            covid19_status = ((user.vaccination_status == vaccinatedStatus) ? lowRisk : highRisk);
         cout << "\nThank you for updating your covid19 test.\n";
         user.covid19_status = covid19_status;
         change_single_user_data(user);
     }
-    system("pause");
-    user_menu(user.username);
 }
 
 // View user profile
@@ -182,11 +180,9 @@ void view_user_profile(user_data_struct user)
     cout << "Identity Number : " << user.ic << "\n";
     cout << "Address : " << user.address << " , " << user.postcode << " , " << state_list[user.state - 1] << "\n";
     cout << "Phone Number : " << user.phone_num << "\n";
-    cout << "Vaccination Status : " << (user.vaccination_status == "A" ? "Vaccinated" : "Unvaccinated") << "\n";
+    cout << "Vaccination Status : " << (user.vaccination_status == vaccinatedStatus ? "Vaccinated" : "Unvaccinated") << "\n";
     cout << "Covid 19 Status : " << covid_19_status[user.covid19_status] << "\n"
          << "\n";
-    system("pause");
-    user_menu(user.username);
 }
 
 // Update user profile
@@ -252,8 +248,6 @@ void update_profile(user_data_struct user)
     }
     change_single_user_data(user);
     cout << "\nUser details updated successfully\n";
-    system("pause");
-    user_menu(user.username);
 }
 
 // Update user's covid 19 covid-19 symptoms
@@ -310,12 +304,10 @@ void update_covid19_symptoms(user_data_struct user)
             cin.ignore();
         }
     }
-    if (tolower(flu) == 'y' && tolower(cough) == 'y' && tolower(fever) == 'y' && (user.covid19_status != 0 && user.covid19_status != 1))
-        user.covid19_status = 2;
-    else if (tolower(flu) == 'n' || tolower(cough) == 'n' || tolower(fever) == 'n' && (user.covid19_status != 0 && user.covid19_status != 1))
-        user.covid19_status = (user.vaccination_status == "A" ? 4 : 3);
+    if (tolower(flu) == 'y' && tolower(cough) == 'y' && tolower(fever) == 'y' && (user.covid19_status != confirmedCase && user.covid19_status != casualContact))
+        user.covid19_status = suspectedCase;
+    else if ((tolower(flu) == 'n' || tolower(cough) == 'n' || tolower(fever) == 'n') && (user.covid19_status != confirmedCase && user.covid19_status != casualContact))
+        user.covid19_status = (user.vaccination_status == vaccinatedStatus ? lowRisk : highRisk);
     change_single_user_data(user);
     cout << "\nSuccessfully updated your symptoms\n";
-    system("pause");
-    user_menu(user.username);
 }

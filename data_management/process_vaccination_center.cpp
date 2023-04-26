@@ -2,8 +2,7 @@
 #include <fstream>
 #include <vector>
 #define splitter '|'
-#include "../type.cpp"
-#pragma once
+#include "../type.h"
 #define vac_center_file "data/vaccination_center.txt"
 using namespace std;
 

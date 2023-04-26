@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#pragma once
-#include "../data_management/process_user_data.cpp"
-#include "./user_helper.cpp"
-#include "../type.cpp"
+#include "../data_management/process_user_data.h"
+#include "./user_helper.h"
+#include "../type.h"
 using namespace std;
 
 // Function prototype
@@ -27,7 +26,7 @@ string read_address(void);
 string read_postcode(void);
 int read_state(void);
 void read_dependant(string *dependant, string *dependant_relationship, vector<user_data_struct> data);
-char read_vaccination_status(void);
+string read_vaccination_status(void);
 char read_has_dependant(void);
 
 // Imported Functions
@@ -62,7 +61,7 @@ void user_register(void)
         dependant = "0";
         dependant_relationship = "0";
     }
-    char vaccination_status = read_vaccination_status();
+    string vaccination_status = read_vaccination_status();
     new_user_data.username = username;
     new_user_data.postcode = postcode;
     new_user_data.password = password;
@@ -75,7 +74,7 @@ void user_register(void)
     new_user_data.phone_num = phone_num;
     new_user_data.dependant = dependant;
     new_user_data.dependant_relationship = dependant_relationship;
-    new_user_data.covid19_status = (vaccination_status == 'A') ? 3 : 2;
+    new_user_data.covid19_status = (vaccination_status == vaccinatedStatus) ? lowRisk : highRisk;
 
     bool has_added = add_user_data(new_user_data);
 
@@ -412,9 +411,9 @@ void read_dependant(string *dependant, string *dependant_relationship, vector<us
 }
 
 // reading vaccination status from user
-char read_vaccination_status(void)
+string read_vaccination_status(void)
 {
-    char vaccination_status;
+    string vaccination_status;
     cout << "\n A - Vaccinated";
     cout << "\n B - Unvaccinated";
     cout << "\nEnter your vaccination status : ";
@@ -423,9 +422,9 @@ char read_vaccination_status(void)
     {
         cin.clear();
         cin.ignore();
-        vaccination_status = 'C';
+        vaccination_status = "C";
     }
-    while (vaccination_status != 'A' && vaccination_status != 'B')
+    while (vaccination_status != vaccinatedStatus && vaccination_status != unvaccinatedStatus)
     {
         cout << "Invalid Vaccination Status";
         cout << "\nEnter your vaccination status : ";
@@ -434,7 +433,7 @@ char read_vaccination_status(void)
         {
             cin.clear();
             cin.ignore();
-            vaccination_status = 'C';
+            vaccination_status = "C";
         }
     }
     return vaccination_status;

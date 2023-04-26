@@ -2,9 +2,8 @@
 #include <vector>
 #include <fstream>
 #include <iostream>
-#pragma once
-#include "../helper/encryption.cpp"
-#include "../type.cpp"
+#include "../helper/encryption.h"
+#include "../type.h"
 #define encryption_key 3
 #define splitter '|'
 #define user_file "data/users.txt"

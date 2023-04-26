@@ -1,11 +1,9 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#pragma once
-// Imported files
-#include "./user_helper.cpp"
-#include "../data_management/process_user_data.cpp"
-#include "./user_menu.cpp"
+#include "./user_helper.h"
+#include "../data_management/process_user_data.h"
+#include "./user_menu.h"
 using namespace std;
 
 // Function prototype

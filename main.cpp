@@ -1,10 +1,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-// files imported
-#include "./user-interface/ui.cpp"
-#include "./user/user_vaccination.cpp"
-#include "./admin/admin_login.cpp"
+#include "./user-interface/ui.h"
+#include "./user/user_vaccination.h"
+#include "./admin/admin_login.h"
 using namespace std;
 
 // Function prototype
@@ -86,3 +85,17 @@ int main(void)
     system("pause");
     return 0;
 }
+
+// Note before running this program
+// 1. Please install g++ compiler first
+// Please refer https://code.visualstudio.com/docs/cpp/config-mingw
+
+// Compilation Command :
+
+// g++ type.h data_management/process_user_data.cpp data_management/process_vaccination.cpp data_management/process_vaccination_center.cpp helper/date_helper.cpp helper/encryption.cpp helper/sorting.cpp user-interface/ui.cpp user/user_helper.cpp user/user_menu.cpp  user/user_vaccination.cpp user/user_login.cpp user/user_register.cpp user/user_functions.cpp admin/admin_menu.cpp admin/admin_functions.cpp admin/admin_login.cpp main.cpp -o main
+
+// Please take note that it will take some time to compile because there are a lot of files
+
+// Execution Command :
+
+// start main.exe

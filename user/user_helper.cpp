@@ -1,8 +1,7 @@
 #include <vector>
 #include <string>
-#pragma once
-#include "../data_management/process_user_data.cpp"
-#include "../type.cpp"
+#include "../data_management/process_user_data.h"
+#include "../type.h"
 using namespace std;
 
 // Function prototype

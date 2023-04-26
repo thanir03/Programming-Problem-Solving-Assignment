@@ -19,3 +19,4 @@ thanir10|sdvvzrug|0194798675|031110036529|Thanirmalai Nagappan|10/11/2003|40 Jal
 ganesh10|sdvvzrug|0154321098|081110036529|Ganesh Kumar|10/11/2008|40 Jalan Cheras |20000|14|A|0|thanir10|Brother
 chandler10|sdvvzrug|0154321098|041110036529|Chandler Bing|04/11/2004|40 Jalan Cheras |20000|14|B|3|harry10|Friend
 elon10|sdvvzrug|0123456789|981230143542|Elon Musk|30/12/1998|41 Jalan Klang|50000|14|A|4|thanir10|Friend
+thanir09|jdqhvk5;|01986743534|031110141309|Thanirmalai Nagappan|10/11/2003|Jalan Cheras Taman Segar|56000|1|A|0|thanir10|Dad

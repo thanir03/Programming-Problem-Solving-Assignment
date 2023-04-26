@@ -1,18 +1,17 @@
 #include <iostream>
 #include <vector>
-#pragma once
-// Imported files
-#include "../user-interface/ui.cpp"
-#include "../admin/admin_menu.cpp"
-#include "../type.cpp"
+#include "../user-interface/ui.h"
+#include "../admin/admin_menu.h"
+#include "../type.h"
 using namespace std;
-// done
 
 // Function prototype
+
 bool has_username_in_admin_list(string username);
 void admin_login(void);
 
 // Imported Functions
+
 void display_heading(string title);
 void admin_menu();
 
@@ -77,7 +76,7 @@ void admin_login(void)
 
     if (password_attempt == 3)
     {
-        cout << "Too many attempts";
+        cout << "\nToo many attempts\n";
         return;
     }
     admin_menu();
