@@ -8,9 +8,9 @@
 #include <fstream>
 #define encryption_key 3
 #define splitter '|'
-#define user_file "data/users.txt"
-#define vac_center_file "data/vaccination_center.txt"
-#define vaccination_data_file "data/vaccination.txt"
+#define user_file "users.txt"
+#define vac_center_file "vaccination_center.txt"
+#define vaccination_data_file "vaccination.txt"
 #define confirmedCase 0
 #define casualContact 1
 #define suspectedCase 2
